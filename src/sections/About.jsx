@@ -6,9 +6,9 @@ export default function About() {
           <p className="section-kicker">Présentation</p>
 
           <h2 className="display-title about__title">
-            L'humain au cœur
+            Stellenbosch 
             <br />
-            de la réussite.
+            Conseil
           </h2>
 
           <div className="rule" />
