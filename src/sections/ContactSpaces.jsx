@@ -8,7 +8,7 @@ export default function ContactSpaces() {
       <div className="contact-spaces__grid">
 
         {/* ESPACE CLIENTS */}
-        <div id="clients" className="contact-panel">
+        <div id="clients" className="contact-panel contact-panel--clients">
           <div className="contact-panel__heading">
             <p className="section-kicker">
               Espace clients
@@ -84,7 +84,7 @@ export default function ContactSpaces() {
         </div>
 
         {/* ESPACE CANDIDATS */}
-        <div id="candidats" className="contact-panel">
+        <div id="candidats" className="contact-panel contact-panel--candidats">
           <div className="contact-panel__heading">
             <p className="section-kicker">
               Espace candidats

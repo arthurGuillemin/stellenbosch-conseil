@@ -17,12 +17,24 @@
 }
 
 .section-kicker {
+  display: inline-block;
+
   margin: 0 0 18px;
+  padding: 7px 12px;
+
   color: var(--sc-blue);
+
   font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  border-radius: 2px;
 }
 
 .display-title {
