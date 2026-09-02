@@ -20,7 +20,7 @@ export default function ContactSpaces() {
               <h3>
                 Parlons de vos
                 <br />
-                recrutements.
+                recrutements
               </h3>
             </div>
 
