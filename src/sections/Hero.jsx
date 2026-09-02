@@ -8,10 +8,9 @@ export default function Hero() {
           </p>
 
           <h1 className="hero__title">
-            Conseil en recrutement
+            Cabinet de conseil 
             <br />
-            de profils rares,
-            <br />
+            en recrutement de profils rares,
             cadres et dirigeants
           </h1>
         </div>

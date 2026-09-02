@@ -4,31 +4,284 @@
 
 .contact-spaces__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
+
+
+/* =========================
+   PANELS
+========================= */
 
 .contact-panel {
-  padding: clamp(70px, 8vw, 110px) clamp(30px, 5vw, 72px);
+  width: 100%;
+
+  padding:
+    clamp(70px, 8vw, 110px)
+    clamp(30px, 8vw, 120px);
+}
+
+.contact-panel + .contact-panel {
+  border-top: var(--border);
 }
 
 
+/* =========================
+   TITRE + VISUEL
+========================= */
+
+.contact-panel__heading-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(180px, 260px);
+
+  gap: clamp(28px, 5vw, 60px);
+
+  align-items: center;
+
+  max-width: 900px;
+
+  margin: 0 auto 46px;
+}
+
 .contact-panel__heading {
-  margin-bottom: 34px;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-panel__heading h3 {
   margin: 8px 0 0;
+
   font-family: var(--font-display);
-  font-size: clamp(2rem, 2.7vw, 3rem);
+
+  font-size: clamp(2.4rem, 4vw, 4rem);
   font-weight: 500;
-  line-height: 1;
+
+  line-height: 0.95;
 }
 
+
+/* =========================
+   PETIT VISUEL
+========================= */
+
+.contact-panel__visual {
+  position: relative;
+
+  width: 100%;
+  max-width: 260px;
+
+  justify-self: end;
+
+  overflow: hidden;
+}
+
+.contact-panel__visual img {
+  display: block;
+
+  width: 100%;
+  height: 200px;
+
+  object-fit: cover;
+  object-position: center;
+
+  filter: grayscale(100%);
+}
+
+.contact-panel__visual::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 52px;
+  height: 3px;
+
+}
+
+
+/* =========================
+   FORMULAIRE
+========================= */
+.form-required-note {
+  max-width: 900px;
+  margin: 0 auto 14px;
+  color: var(--sc-grey-600);
+  font-size: 0.78rem;
+}
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.form-field--full {
+  grid-column: 1 / -1;
+}
+
+.form-control {
+  width: 100%;
+  min-height: 52px;
+
+  padding: 14px 16px;
+
+  color: var(--sc-black);
+
+  border: 1px solid var(--sc-grey-200);
+  border-radius: var(--radius-sm);
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+}
+
+textarea.form-control {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+.form-control::placeholder {
+  color: #8a8a8a;
+}
+
+.form-control:focus {
+  border-color: var(--sc-blue);
+
+  background: var(--sc-white);
+
+  box-shadow:
+    0 0 0 3px rgba(49, 95, 157, 0.1);
+}
+
+
+/* =========================
+   UPLOAD CV
+========================= */
+
+.file-input {
+  display: flex;
+
+  min-height: 52px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 8px 10px 8px 16px;
+
+  border: 1px solid var(--sc-grey-200);
+
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.file-input__label {
+  color: var(--sc-grey-600);
+
+  font-size: 0.86rem;
+}
+
+.file-input__button {
+  padding: 9px 14px;
+
+  border: 1px solid var(--sc-grey-400);
+
+  background: transparent;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   BOUTON
+========================= */
+
+.form-submit {
+  margin-top: 16px;
+}
+
+
+/* =========================
+   TABLETTE
+========================= */
+
 @media (max-width: 980px) {
-  .contact-spaces__grid { grid-template-columns: 1fr; }
-  .contact-panel + .contact-panel {
-    border-top: var(--border);
-    border-left: 0;
+
+  .contact-panel__heading-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(160px, 220px);
+  }
+
+  .contact-panel__visual {
+    max-width: 220px;
+  }
+
+  .contact-panel__visual img {
+    height: 180px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 680px) {
+
+  .contact-panel {
+    padding:
+      70px
+      22px;
+  }
+
+  .contact-panel__heading-grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+
+    margin-bottom: 38px;
+  }
+
+  .contact-panel__heading h3 {
+    font-size: clamp(2.3rem, 11vw, 3.4rem);
+  }
+
+  .contact-panel__visual {
+    justify-self: start;
+
+    max-width: 210px;
+  }
+
+  .contact-panel__visual img {
+    height: 160px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field--full {
+    grid-column: auto;
   }
 }

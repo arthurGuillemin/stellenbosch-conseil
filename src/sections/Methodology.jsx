@@ -22,22 +22,40 @@ const steps = [
   {
     number: "05",
     title: "Accompagner",
-    text: "Suivi du processus jusqu’à la signature et à la prise de poste.",
+    text: "Suivi du processus jusqu’à la signature et prise de poste.",
   },
 ];
 
 export default function Methodology() {
   return (
     <section id="methodologie" className="section methodology">
-      <div className="container">
-        <div className="methodology__header">
-          <p className="section-kicker">Méthodologie</p>
+      <div className="container methodology__grid">
 
-          <h2 className="display-title methodology__title">
-            L’approche directe.
-          </h2>
+        <div className="methodology__content">
 
-          <div className="rule methodology__rule" />
+          <div className="methodology__heading-grid">
+            <div className="methodology__heading">
+              <p className="section-kicker">
+                Méthodologie
+              </p>
+
+              <h2 className="display-title methodology__title">
+                Stellenbosch
+                <br />
+                Conseil
+              </h2>
+
+              <div className="rule" />
+            </div>
+
+            <div className="methodology__visual">
+              <img
+                src="/images/galeriaO.jpg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
 
           <div className="methodology__copy">
             <p>
@@ -57,25 +75,36 @@ export default function Methodology() {
               projet de recrutement.
             </p>
           </div>
+
         </div>
 
-        <div className="methodology__steps">
-          {steps.map((step) => (
-            <article className="method-step" key={step.number}>
-              <div className="method-step__number">
-                {step.number}
-              </div>
+        <div className="methodology__right">
 
-              <h3 className="method-step__title">
-                {step.title}
-              </h3>
+          <div className="methodology__steps">
+            {steps.map((step) => (
+              <article
+                className="method-step"
+                key={step.number}
+              >
+                <div className="method-step__number">
+                  {step.number}
+                </div>
 
-              <p className="method-step__text">
-                {step.text}
-              </p>
-            </article>
-          ))}
+                <div className="method-step__content">
+                  <h3 className="method-step__title">
+                    {step.title}
+                  </h3>
+
+                  <p className="method-step__text">
+                    {step.text}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+
         </div>
+
       </div>
     </section>
   );

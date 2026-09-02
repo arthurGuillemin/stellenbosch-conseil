@@ -9,15 +9,33 @@ export default function ContactSpaces() {
 
         {/* ESPACE CLIENTS */}
         <div id="clients" className="contact-panel">
-          <div className="contact-panel__heading">
-            <p className="section-kicker">
-              Espace clients
-            </p>
 
-            <h3>
-              Vos              besoins
-            </h3>
+          <div className="contact-panel__heading-grid">
+
+            <div className="contact-panel__heading">
+              <p className="section-kicker">
+                Espace clients
+              </p>
+
+              <h3>
+                Parlons de vos
+                <br />
+                recrutements.
+              </h3>
+            </div>
+
+            <div className="contact-panel__visual">
+              <img
+                src="/images/clients.webp"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+
           </div>
+          <p className="form-required-note">
+  * Champs obligatoires
+</p>
 
           <form
             className="form-grid"
@@ -28,7 +46,7 @@ export default function ContactSpaces() {
                 className="form-control"
                 type="text"
                 name="name"
-                placeholder="Nom et prénom"
+                placeholder="Nom et prénom *"
                 autoComplete="name"
               />
             </div>
@@ -48,7 +66,7 @@ export default function ContactSpaces() {
                 className="form-control"
                 type="email"
                 name="email"
-                placeholder="Adresse e-mail"
+                placeholder="Adresse e-mail *"
                 autoComplete="email"
               />
             </div>
@@ -67,7 +85,7 @@ export default function ContactSpaces() {
               <textarea
                 className="form-control"
                 name="request"
-                placeholder="Nature de votre demande"
+                placeholder="Vos besoins"
               />
             </div>
 
@@ -85,17 +103,33 @@ export default function ContactSpaces() {
 
         {/* ESPACE CANDIDATS */}
         <div id="candidats" className="contact-panel">
-          <div className="contact-panel__heading">
-            <p className="section-kicker">
-              Espace candidats
-            </p>
 
-            <h3>
-              Construisons la suite
-              <br />
-              de votre parcours
-            </h3>
+          <div className="contact-panel__heading-grid">
+
+            <div className="contact-panel__heading">
+              <p className="section-kicker">
+                Espace candidats
+              </p>
+
+              <h3>
+                Construisons la suite
+                <br />
+                de votre parcours
+              </h3>
+            </div>
+
+            <div className="contact-panel__visual">
+              <img
+                src="/images/candidats.avif"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+
           </div>
+            <p className="form-required-note">
+    * Champs obligatoires
+  </p>
 
           <form
             className="form-grid"
@@ -106,7 +140,7 @@ export default function ContactSpaces() {
                 className="form-control"
                 type="text"
                 name="firstname"
-                placeholder="Prénom"
+                placeholder="Prénom *"
                 autoComplete="given-name"
               />
             </div>
@@ -116,7 +150,7 @@ export default function ContactSpaces() {
                 className="form-control"
                 type="text"
                 name="lastname"
-                placeholder="Nom"
+                placeholder="Nom *"
                 autoComplete="family-name"
               />
             </div>
@@ -126,7 +160,7 @@ export default function ContactSpaces() {
                 className="form-control"
                 type="email"
                 name="email"
-                placeholder="Adresse e-mail"
+                placeholder="Adresse e-mail *" 
                 autoComplete="email"
               />
             </div>
@@ -174,7 +208,7 @@ export default function ContactSpaces() {
                 className="btn btn--primary btn--full"
                 type="submit"
               >
-                Envoyer mon cv
+                Envoyer mon CV
                 <span aria-hidden="true">→</span>
               </button>
             </div>

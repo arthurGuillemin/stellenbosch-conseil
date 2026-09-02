@@ -2,16 +2,34 @@ export default function About() {
   return (
     <section id="presentation" className="section section--white about">
       <div className="container about__grid">
+
         <div className="about__content">
-          <p className="section-kicker">Présentation</p>
 
-          <h2 className="display-title about__title">
-            Stellenbosch
-            <br />
-            Conseil
-          </h2>
+          <div className="about__heading-grid">
 
-          <div className="rule" />
+            <div className="about__heading">
+              <p className="section-kicker">
+                Présentation
+              </p>
+
+              <h2 className="display-title about__title">
+                Stellenbosch
+                <br />
+                Conseil
+              </h2>
+
+              <div className="rule" />
+            </div>
+
+            <div className="about__visual">
+              <img
+                src="/images/guggenheim.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+
+          </div>
 
           <div className="about__copy">
             <p>
@@ -33,7 +51,7 @@ export default function About() {
 
             <p>
               Notre expertise est particulièrement développée dans le secteur
-              automobile et notamment la distribution automobile.
+              automobile.
             </p>
 
             <p className="about__founder">
@@ -41,6 +59,7 @@ export default function About() {
               <strong> Emmanuel Porte.</strong>
             </p>
           </div>
+
         </div>
 
         <div className="about__media">
@@ -52,10 +71,16 @@ export default function About() {
           />
 
           <p className="about__caption">
-            Emmanuel Porte
-            <span>Fondateur de Stellenbosch Conseil</span>
+            Emmanuel Porte — Fondateur de Stellenbosch Conseil
+
+            <span>
+              Après un parcours dans l’industrie automobile et dans la
+              distribution automobile où il a occupé des postes de direction,
+              Emmanuel Porte a fondé le cabinet Stellenbosch Conseil en 2022.
+            </span>
           </p>
         </div>
+
       </div>
     </section>
   );

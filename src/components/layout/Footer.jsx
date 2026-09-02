@@ -7,23 +7,21 @@ export default function Footer() {
 
           <div className="footer__brand">
             <img
-              src="/images/Logo-bleu.png"
+              src="/images/Logo-bleu.jpeg"
               alt="Stellenbosch Conseil"
               width="260"
               height="120"
             />
 
             <p>
-             Conseil en recrutement de profils rares , cadres et dirigeants
+             Cabinet de conseil en recrutement de profils rares , cadres et dirigeants
             </p>
           </div>
 
           <div>
             <div className="footer__contact">
               <span>
-                9, rue Vineuse
-                <br />
-                75116 Paris
+                 Paris - France
               </span>
 
               <a href="mailto:eporte@stellenboschconseil.com">
@@ -68,6 +66,25 @@ export default function Footer() {
                     fill="currentColor"
                     d="M13.5 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.8 1.8-1.8H17V2.3c-.3 0-1.4-.3-2.7-.3-2.7 0-4.6 1.7-4.6 4.8v2.7H7V13h2.7v9h3.8Z"
                   />
+                </svg>
+              </a>
+              <a
+                href=""
+                className="social-link"
+                aria-label="Instagram Stellenbosch Conseil"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
                 </svg>
               </a>
             </div>

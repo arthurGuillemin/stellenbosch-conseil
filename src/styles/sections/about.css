@@ -1,22 +1,118 @@
+.about {
+  background: var(--sc-white);
+}
+
+
+/* =========================
+   GRILLE PRINCIPALE
+========================= */
+
 .about__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(300px, 0.9fr);
+
   gap: clamp(60px, 8vw, 120px);
+
   align-items: center;
 }
 
+
+/* =========================
+   COLONNE GAUCHE
+========================= */
+
 .about__content {
+  min-width: 0;
   max-width: 720px;
 }
 
+
+/* =========================
+   TITRE + VISUEL
+========================= */
+
+.about__heading-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(160px, 230px);
+
+  gap: clamp(20px, 3vw, 38px);
+
+  align-items: center;
+}
+
+.about__heading {
+  min-width: 0;
+}
+
+.about__title {
+  margin: 0;
+}
+
+
+/* =========================
+   PETIT VISUEL
+========================= */
+
+.about__visual {
+  position: relative;
+
+  width: 100%;
+  max-width: 230px;
+
+  justify-self: end;
+
+  overflow: hidden;
+}
+
+.about__visual img {
+  display: block;
+
+  width: 100%;
+  height: 280px;
+
+  object-fit: cover;
+  object-position: center;
+
+  filter: grayscale(100%);
+}
+
+.about__visual::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 52px;
+  height: 3px;
+
+}
+
+
+/* =========================
+   TEXTE
+========================= */
+
 .about__copy {
   display: grid;
+
   gap: 22px;
-  margin-top: 32px;
+
+  margin-top: 36px;
 }
 
 .about__copy p {
   margin: 0;
+
+  color: var(--sc-grey-700);
+
   line-height: 1.75;
 }
 
@@ -25,47 +121,135 @@
 }
 
 .about__founder strong {
+  color: var(--sc-black);
+
   font-weight: 600;
 }
 
+
+/* =========================
+   PHOTO EMMANUEL
+========================= */
+
 .about__media {
   justify-self: end;
+
   width: 100%;
   max-width: 380px;
 }
 
 .about__image {
   display: block;
+
   width: 100%;
   height: 500px;
+
   object-fit: cover;
   object-position: center top;
+
   filter: grayscale(100%);
 }
 
 .about__caption {
   margin: 16px 0 0;
+
+  color: var(--sc-black);
+
   font-size: 0.9rem;
 }
 
 .about__caption span {
   display: block;
-  margin-top: 4px;
+
+  margin-top: 6px;
+
   color: var(--sc-grey-600);
+
   font-size: 0.78rem;
+  line-height: 1.55;
 }
 
+
+/* =========================
+   TABLETTE
+========================= */
+
 @media (max-width: 980px) {
+
   .about__grid {
     grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .about__content {
+    max-width: 760px;
+  }
+
+  .about__heading-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(160px, 220px);
+  }
+
+  .about__visual {
+    max-width: 220px;
+  }
+
+  .about__visual img {
+    height: 270px;
   }
 
   .about__media {
     justify-self: start;
+
     max-width: 340px;
   }
 
   .about__image {
     height: 440px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 680px) {
+
+  .about__heading-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .about__visual {
+    justify-self: start;
+
+    max-width: 210px;
+  }
+
+  .about__visual img {
+    height: 250px;
+  }
+
+  .about__copy {
+    gap: 18px;
+
+    margin-top: 32px;
+  }
+
+  .about__copy p {
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .about__media {
+    max-width: 100%;
+  }
+
+  .about__image {
+    height: 420px;
   }
 }
