@@ -44,14 +44,12 @@ export default function About() {
             </p>
 
             <p>
-              Notre méthodologie est basée sur l’approche directe qui nous
-              permet de cibler en première intention des candidats qui ne sont
-              pas nécessairement à l’écoute du marché.
+              Notre méthodologie est basée sur l’approche directe
             </p>
 
             <p>
               Notre expertise est particulièrement développée dans le secteur
-              automobile.
+              automobile et notamment la distribution automobile.
             </p>
 
             <p className="about__founder">

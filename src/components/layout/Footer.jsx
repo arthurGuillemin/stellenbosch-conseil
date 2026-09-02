@@ -7,7 +7,7 @@ export default function Footer() {
 
           <div className="footer__brand">
             <img
-              src="/images/Logo-bleu.jpeg"
+              src="/images/Logo-bleu.png"
               alt="Stellenbosch Conseil"
               width="260"
               height="120"

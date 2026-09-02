@@ -22,7 +22,7 @@ const steps = [
   {
     number: "05",
     title: "Accompagner",
-    text: "Signature et prise de poste.",
+    text: "jusqu’à la signature et la prise de poste.",
   },
 ];
 

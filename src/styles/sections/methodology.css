@@ -104,6 +104,7 @@
 
 .methodology__copy {
   display: grid;
+    text-align: justify;
 
   gap: 22px;
 
@@ -145,6 +146,7 @@
 
 .method-step {
   position: relative;
+    text-align: justify;
 
   display: grid;
 

@@ -15,10 +15,11 @@ const references = [
     name: "Groupe Vincent",
     logo: "/images/refs/groupe-vincent.png",
   },
-  {
-    name: "Stellantis &You",
-    logo: "/images/refs/stellantis-and-you.png",
-  },
+{
+  name: "Stellantis &You",
+  logo: "/images/refs/stellantis-and-you.png",
+  className: "logo--stellantis",
+},
   {
     name: "Transpolis",
     logo: "/images/refs/transpolis.png",
@@ -57,21 +58,21 @@ export default function References() {
 
       <div className="logo-marquee">
         <div className="logo-marquee__track">
-          {duplicatedReferences.map((reference, index) => (
-            <div
-              className="logo-marquee__item"
-              key={`${reference.name}-${index}`}
-            >
-              <img
-                src={reference.logo}
-                alt={reference.name}
-                loading="lazy"
-                width="260"
-              height="120"
-              />
-            </div>
-          ))}
-        </div>
+  {references.map((reference, index) => (
+    <div
+      className="logo-marquee__item"
+      key={`${reference.name}-${index}`}
+    >
+      <img
+        src={reference.logo}
+        alt={reference.name}
+          className={reference.className || ""}
+
+        loading="lazy"
+      />
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );

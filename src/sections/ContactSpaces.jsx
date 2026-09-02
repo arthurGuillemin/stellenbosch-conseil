@@ -48,6 +48,7 @@ export default function ContactSpaces() {
                 name="name"
                 placeholder="Nom et prénom *"
                 autoComplete="name"
+                required = "true"
               />
             </div>
 

@@ -5,7 +5,7 @@ export default function Navbar() {
         <nav className="site-nav">
           <a href="#top" className="site-logo">
             <img
-              src="/images/Logo-bleu.jpeg"
+              src="/images/Logo-bleu.png"
               alt="Stellenbosch Conseil"
               width="260"
               height="120"

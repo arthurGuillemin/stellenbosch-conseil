@@ -13,9 +13,11 @@
   gap: 32px;
 }
 
-.site-logo {
+.site-logo img {
   width: 130px;
-  flex: 0 0 auto;
+  height: 130px;
+  border-radius: 7%;
+  object-fit: cover;
 }
 
 .site-nav__links {
