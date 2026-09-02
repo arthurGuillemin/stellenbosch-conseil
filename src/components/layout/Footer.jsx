@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="site-footer">
@@ -8,19 +9,16 @@ export default function Footer() {
             <img
               src="/images/Logo-bleu.png"
               alt="Stellenbosch Conseil"
+              width="260"
+              height="120"
             />
 
             <p>
-              Conseil en recrutement de cadres,
-              dirigeants et profils experts.
+             Conseil en recrutement de profils rares , cadres et dirigeants
             </p>
           </div>
 
           <div>
-            <p className="footer__title">
-              Nous contacter
-            </p>
-
             <div className="footer__contact">
               <span>
                 9, rue Vineuse
@@ -42,14 +40,35 @@ export default function Footer() {
             <p className="footer__title">
               Réseaux
             </p>
-
             <div className="footer__social">
               <a
                 href="https://www.linkedin.com/company/stellenbosch-conseil/"
                 className="social-link"
-                aria-label="LinkedIn"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn Stellenbosch Conseil"
               >
                 in
+              </a>
+
+              <a
+                href="https://www.facebook.com/stellenbosch.conseil"
+                className="social-link"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook Stellenbosch Conseil"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.5 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.8 1.8-1.8H17V2.3c-.3 0-1.4-.3-2.7-.3-2.7 0-4.6 1.7-4.6 4.8v2.7H7V13h2.7v9h3.8Z"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -62,13 +81,13 @@ export default function Footer() {
           </span>
 
           <div className="footer__legal">
-            <a href="/mentions-legales">
+            <Link to="/mentions-legales">
               Mentions légales
-            </a>
+            </Link>
 
-            <a href="/confidentialite">
+             <Link to="/confidentialite">
               Politique de confidentialité
-            </a>
+            </Link>
           </div>
         </div>
       </div>

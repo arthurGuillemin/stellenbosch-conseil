@@ -31,30 +31,38 @@ export default function Methodology() {
     <section id="methodologie" className="section methodology">
       <div className="container">
         <div className="methodology__header">
-          <p className="section-kicker">Notre méthodologie</p>
+          <p className="section-kicker">Méthodologie</p>
 
-          <h2 className="display-title">
-            Une approche structurée
-            <br />
-            et sur mesure.
+          <h2 className="display-title methodology__title">
+            L’approche directe.
           </h2>
 
-          <p className="methodology__intro">
-            Une méthode centrée sur l’approche directe et la compréhension
-            fine des enjeux humains et professionnels.
-          </p>
+          <div className="rule methodology__rule" />
+
+          <div className="methodology__copy">
+            <p>
+              Stellenbosch Conseil développe une méthodologie qualitative très
+              structurée et sur mesure centrée sur l’approche directe des
+              candidats.
+            </p>
+
+            <p>
+              Cette méthode permet de cibler les meilleurs profils et
+              d’optimiser la qualité des recrutements.
+            </p>
+
+            <p>
+              Le cabinet propose un agenda précis qui intègre les éléments
+              humains, financiers et temporels inhérents à la réussite d’un
+              projet de recrutement.
+            </p>
+          </div>
         </div>
 
         <div className="methodology__steps">
           {steps.map((step) => (
             <article className="method-step" key={step.number}>
               <div className="method-step__number">
-                {step.number}
-              </div>
-
-              <div className="method-step__dot" />
-
-              <div className="method-step__icon" aria-hidden="true">
                 {step.number}
               </div>
 

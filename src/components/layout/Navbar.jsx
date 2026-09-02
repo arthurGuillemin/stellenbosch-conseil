@@ -7,6 +7,8 @@ export default function Navbar() {
             <img
               src="/images/Logo-bleu.png"
               alt="Stellenbosch Conseil"
+              width="260"
+              height="120"
             />
           </a>
 

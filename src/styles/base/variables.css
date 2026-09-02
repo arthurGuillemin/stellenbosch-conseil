@@ -1,0 +1,46 @@
+:root {
+  --sc-blue: #315f9d;
+  --sc-blue-dark: #17355f;
+  --sc-blue-ink: #0d2342;
+
+  --sc-black: #101010;
+  --sc-charcoal: #1b1b1b;
+  --sc-white: #ffffff;
+  --sc-off-white: #f7f5f1;
+  --sc-cream: #f1eee8;
+  --sc-grey-100: #f2f2f2;
+  --sc-grey-200: #dedede;
+  --sc-grey-400: #a7a7a7;
+  --sc-grey-600: #666666;
+  --sc-grey-800: #2e2e2e;
+
+  --sc-gold: #b89a5b;
+
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", Arial, Helvetica, sans-serif;
+
+  --fs-xs: 0.72rem;
+  --fs-sm: 0.86rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.15rem;
+  --fs-xl: 1.45rem;
+  --fs-2xl: clamp(2rem, 3vw, 3.2rem);
+  --fs-hero: clamp(3.3rem, 6.6vw, 7.4rem);
+
+  --container: 1240px;
+  --gutter: clamp(24px, 5vw, 72px);
+  --section-y: clamp(80px, 10vw, 140px);
+
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --border: 1px solid rgba(16, 16, 16, 0.14);
+  --shadow-soft: 0 14px 45px rgba(0, 0, 0, 0.08);
+  --transition: 220ms ease;
+}
+
+@media (max-width: 680px) {
+  :root {
+    --gutter: 22px;
+    --section-y: 74px;
+  }
+}

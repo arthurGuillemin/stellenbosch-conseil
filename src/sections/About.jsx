@@ -2,34 +2,58 @@ export default function About() {
   return (
     <section id="presentation" className="section section--white about">
       <div className="container about__grid">
-        <div>
+        <div className="about__content">
           <p className="section-kicker">Présentation</p>
 
           <h2 className="display-title about__title">
-            Stellenbosch 
+            Stellenbosch
             <br />
             Conseil
           </h2>
 
           <div className="rule" />
+
+          <div className="about__copy">
+            <p>
+              Stellenbosch Conseil est un cabinet de conseil spécialisé dans
+              les ressources humaines et le recrutement.
+            </p>
+
+            <p>
+              Nous accompagnons depuis 2022 des PME et des grands groupes dans
+              le recrutement de leurs profils rares, cadres et dirigeants en
+              France comme à l&apos;international.
+            </p>
+
+            <p>
+              Notre méthodologie est basée sur l’approche directe qui nous
+              permet de cibler en première intention des candidats qui ne sont
+              pas nécessairement à l’écoute du marché.
+            </p>
+
+            <p>
+              Notre expertise est particulièrement développée dans le secteur
+              automobile et notamment la distribution automobile.
+            </p>
+
+            <p className="about__founder">
+              Le cabinet est dirigé par son fondateur
+              <strong> Emmanuel Porte.</strong>
+            </p>
+          </div>
         </div>
 
-        <div className="about__copy">
-          <p>
-            Stellenbosch Conseil est un cabinet de conseil spécialisé dans
-            les ressources humaines et le recrutement.
-          </p>
+        <div className="about__media">
+          <img
+            src="/images/emPorte.png"
+            alt="Emmanuel Porte, fondateur de Stellenbosch Conseil"
+            className="about__image"
+            loading="lazy"
+          />
 
-          <p>
-            Nous accompagnons PME et grands groupes dans le recrutement
-            d'experts métier, de cadres et de dirigeants, en France comme
-            à l'international.
-          </p>
-
-          <p>
-            Notre approche repose sur une méthodologie exigeante,
-            personnalisée et centrée sur l'approche directe, avec une
-            expertise particulièrement développée dans le secteur automobile.
+          <p className="about__caption">
+            Emmanuel Porte
+            <span>Fondateur de Stellenbosch Conseil</span>
           </p>
         </div>
       </div>

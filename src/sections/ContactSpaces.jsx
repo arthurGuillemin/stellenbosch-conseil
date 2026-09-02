@@ -15,9 +15,7 @@ export default function ContactSpaces() {
             </p>
 
             <h3>
-              Parlons de vos
-              <br />
-              recrutements.
+              Vos              besoins
             </h3>
           </div>
 
@@ -95,7 +93,7 @@ export default function ContactSpaces() {
             <h3>
               Construisons la suite
               <br />
-              de votre parcours.
+              de votre parcours
             </h3>
           </div>
 
@@ -176,7 +174,7 @@ export default function ContactSpaces() {
                 className="btn btn--primary btn--full"
                 type="submit"
               >
-                Envoyer ma candidature
+                Envoyer mon cv
                 <span aria-hidden="true">→</span>
               </button>
             </div>

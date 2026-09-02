@@ -51,7 +51,7 @@ export default function References() {
     <section className="references">
       <div className="container">
         <p className="references__title">
-          Ils nous font confiance
+          Nos références
         </p>
       </div>
 
@@ -66,6 +66,8 @@ export default function References() {
                 src={reference.logo}
                 alt={reference.name}
                 loading="lazy"
+                width="260"
+              height="120"
               />
             </div>
           ))}

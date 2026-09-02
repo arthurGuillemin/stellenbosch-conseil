@@ -1,0 +1,92 @@
+.references {
+  overflow: hidden;
+  padding: 56px 0 50px;
+  border-bottom: var(--border);
+  background: var(--sc-white);
+}
+
+.references__title {
+  margin: 0 0 32px;
+  color: var(--sc-blue);
+  text-align: center;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.logo-marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-marquee::before,
+.logo-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100px;
+  height: 100%;
+  pointer-events: none;
+}
+
+.logo-marquee::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--sc-white) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.logo-marquee::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--sc-white) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.logo-marquee__track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: clamp(60px, 7vw, 110px);
+
+  animation: logo-scroll 32s linear infinite;
+  will-change: transform;
+}
+
+
+
+.logo-marquee img {
+  display: block;
+  width: auto;
+  max-width: 155px;
+  height: 64px;
+
+  object-fit: contain;
+
+  opacity: 1;
+  filter: none;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.logo-marquee img:hover {
+  transform: scale(1.06);
+}
+
+@keyframes logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

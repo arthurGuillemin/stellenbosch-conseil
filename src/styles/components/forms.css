@@ -1,0 +1,118 @@
+.contact-spaces {
+  background: var(--sc-off-white);
+}
+
+.contact-spaces__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-panel {
+  padding: clamp(70px, 8vw, 110px) clamp(30px, 5vw, 72px);
+}
+
+.contact-panel + .contact-panel {
+  position: relative;
+}
+
+.contact-panel + .contact-panel::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 5%;
+  height: 90%;
+
+  width: 1px;
+  background: rgba(16, 16, 16, 0.14);
+}
+
+.contact-panel__icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 18px;
+  color: var(--sc-grey-800);
+}
+
+.contact-panel__heading {
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.contact-panel__heading h3 {
+  margin: 8px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 2.7vw, 3rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.form-field--full {
+  grid-column: 1 / -1;
+}
+
+.form-control {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 16px;
+  color: var(--sc-black);
+  border: 1px solid var(--sc-grey-200);
+  border-radius: var(--radius-sm);
+  outline: none;
+  background: rgba(255, 255, 255, 0.78);
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-control::placeholder {
+  color: #8a8a8a;
+}
+
+.form-control:focus {
+  border-color: var(--sc-blue);
+  background: var(--sc-white);
+  box-shadow: 0 0 0 3px rgba(49, 95, 157, 0.1);
+}
+
+.file-input {
+  display: flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 10px 8px 16px;
+  border: 1px solid var(--sc-grey-200);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.file-input__label {
+  color: var(--sc-grey-600);
+  font-size: 0.86rem;
+}
+
+.file-input__button {
+  padding: 9px 14px;
+  border: 1px solid var(--sc-grey-400);
+  background: transparent;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.form-submit {
+  margin-top: 16px;
+}

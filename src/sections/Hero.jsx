@@ -10,26 +10,10 @@ export default function Hero() {
           <h1 className="hero__title">
             Conseil en recrutement
             <br />
-            de cadres, dirigeants
+            de profils rares,
             <br />
-            et profils rares.
+            cadres et dirigeants
           </h1>
-
-          <p className="hero__subtitle">
-            Executive Search & Conseil en Ressources Humaines
-          </p>
-
-          <div className="hero__actions">
-            <a href="#clients" className="btn btn--primary">
-              Nous confier une mission
-              <span aria-hidden="true">→</span>
-            </a>
-
-            <a href="#candidats" className="btn btn--outline-light">
-              Déposer un CV
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
         </div>
       </div>
     </section>

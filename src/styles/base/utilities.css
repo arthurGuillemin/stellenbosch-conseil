@@ -1,0 +1,47 @@
+.container {
+  width: min(calc(100% - (2 * var(--gutter))), var(--container));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-y);
+}
+
+.section--white {
+  background: var(--sc-white);
+}
+
+.section--dark {
+  color: var(--sc-white);
+  background: var(--sc-black);
+}
+
+.section-kicker {
+  margin: 0 0 18px;
+  color: var(--sc-blue);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.display-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+
+.body-copy {
+  max-width: 62ch;
+  color: var(--sc-grey-600);
+}
+
+.rule {
+  width: 44px;
+  height: 2px;
+  margin-top: 24px;
+  background: var(--sc-blue);
+}

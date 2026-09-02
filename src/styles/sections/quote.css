@@ -1,0 +1,62 @@
+.quote-section {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(70px, 8vw, 110px) var(--gutter);
+  color: var(--sc-white);
+  text-align: center;
+background:
+  radial-gradient(
+    circle at 84% 56%,
+    rgba(255, 255, 255, 0.15),
+    transparent 30%
+  ),
+  linear-gradient(
+    135deg,
+    #414141 0%,
+    #595959 48%,
+    #353535 100%
+  );
+}
+
+.quote-section::after {
+  content: "”";
+  position: absolute;
+  right: 4vw;
+  bottom: -80px;
+  color: rgba(255, 255, 255, 0.035);
+  font-family: var(--font-display);
+  font-size: 27rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.quote-mark {
+  margin-bottom: 12px;
+  color: var(--sc-gold);
+  font-family: var(--font-display);
+  font-size: 5rem;
+  line-height: 0.8;
+}
+
+.quote-text {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 4rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.quote-author {
+  margin: 28px 0 0;
+  color: var(--sc-gold);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 680px) {
+  .quote-text { font-size: clamp(2rem, 9vw, 3rem); }
+}
