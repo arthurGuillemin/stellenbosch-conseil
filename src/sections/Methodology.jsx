@@ -12,7 +12,7 @@ const steps = [
   {
     number: "03",
     title: "Évaluer",
-    text: "Entretiens approfondis et analyse de l’adéquation des candidats au poste..",
+    text: "Entretiens approfondis et analyse de l’adéquation des candidats au poste.",
   },
   {
     number: "04",

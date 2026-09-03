@@ -32,11 +32,13 @@ background:
 }
 
 .quote-mark {
+  position: relative;
   margin-bottom: 12px;
   color: var(--sc-gold);
   font-family: var(--font-display);
   font-size: 5rem;
   line-height: 0.8;
+  right: 22rem;
 }
 
 .quote-text {

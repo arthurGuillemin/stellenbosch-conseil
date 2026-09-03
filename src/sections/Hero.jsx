@@ -7,11 +7,10 @@ export default function Hero() {
             Paris · France & International
           </p>
 
-          <h1 className="hero__title">
-            Cabinet de conseil spécialisé
-            <br />
-             dans le recrutement de profils rares,
-            cadres et dirigeants
+          <h1 className="hero__title fade-in is-visible">
+            Cabinet de conseil <br />
+            spécialisé dans le recrutement <br />
+             de profils rares, cadres et dirigeants
           </h1>
         </div>
       </div>

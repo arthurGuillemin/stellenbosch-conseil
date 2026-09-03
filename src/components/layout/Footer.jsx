@@ -14,7 +14,7 @@ export default function Footer() {
             />
 
             <p>
-             Cabinet de conseil <br />en recrutement de profils rares, cadres et dirigeants
+             Cabinet de conseil <br />spécialisé dans le recrutement <br /> de profils rares, cadres et dirigeants
             </p>
           </div>
 

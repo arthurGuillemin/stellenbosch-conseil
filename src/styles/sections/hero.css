@@ -19,11 +19,11 @@
 }
 
 .hero__inner {
-  position: relative;
+  position:static;
   display: flex;
   min-height: inherit;
   align-items: flex-end;
-  padding-bottom: clamp(72px, 9vw, 120px);
+  padding-bottom: clamp(72px, 9vw, 180px);
 }
 
 .hero__content { max-width: 900px; }
@@ -38,7 +38,7 @@
 }
 
 .hero__title {
-  max-width: 900px;
+  max-width: 100%;
   margin: 0;
   font-family: var(--font-display);
   font-size: var(--fs-hero);

@@ -25,7 +25,7 @@
   --fs-lg: 1.15rem;
   --fs-xl: 1.45rem;
   --fs-2xl: clamp(2rem, 3vw, 3.2rem);
-  --fs-hero: clamp(3.3rem, 6.6vw, 5rem);
+  --fs-hero: clamp(3.3rem, 6.6vw, 4.5rem);
 
   --container: 1240px;
   --gutter: clamp(24px, 5vw, 72px);

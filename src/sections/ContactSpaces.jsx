@@ -48,7 +48,7 @@ export default function ContactSpaces() {
                 name="name"
                 placeholder="Nom et prénom *"
                 autoComplete="name"
-                required = "true"
+                required ={true}
               />
             </div>
 
@@ -87,7 +87,7 @@ export default function ContactSpaces() {
                 className="form-control"
                 name="request"
                 placeholder="Vos besoins *"
-                required = "true"
+                required ={true}
               />
             </div>
 
@@ -144,7 +144,7 @@ export default function ContactSpaces() {
                 name="firstname"
                 placeholder="Prénom *"
                 autoComplete="given-name"
-                required = "true"
+                required ={true}
               />
             </div>
 
@@ -155,7 +155,7 @@ export default function ContactSpaces() {
                 name="lastname"
                 placeholder="Nom *"
                 autoComplete="family-name"
-                required = "true"
+                required ={true}
               />
             </div>
 
@@ -166,7 +166,7 @@ export default function ContactSpaces() {
                 name="email"
                 placeholder="Adresse e-mail *" 
                 autoComplete="email"
-                required = "true"
+                required ={true}
               />
             </div>
 
@@ -186,7 +186,7 @@ export default function ContactSpaces() {
                 type="text"
                 name="position"
                 placeholder="Poste recherché *"
-                required = "true"
+                required ={true}
               />
             </div>
 

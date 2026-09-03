@@ -3,6 +3,7 @@
 @import "./base/variables.css";
 @import "./base/reset.css";
 @import "./base/utilities.css";
+@import "./base/animations.css";
 
 @import "./components/navbar.css";
 @import "./components/buttons.css";

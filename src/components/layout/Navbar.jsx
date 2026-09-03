@@ -3,7 +3,7 @@ export default function Navbar() {
     <header className="site-header">
       <div className="container">
         <nav className="site-nav">
-          <a href="#top" className="site-logo">
+          <a href="#top" className="site-logo fade-in is-visible">
             <img
               src="/images/Logo-bleu.png"
               alt="Stellenbosch Conseil"
