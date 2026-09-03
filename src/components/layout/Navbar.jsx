@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <header className="site-header">
@@ -18,10 +19,6 @@ export default function Navbar() {
             <a href="#clients">Espace clients</a>
             <a href="#candidats">Espace candidats</a>
           </div>
-
-          <a href="#clients" className="nav-cta">
-            Contact
-          </a>
         </nav>
       </div>
     </header>
