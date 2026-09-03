@@ -49,6 +49,10 @@
 
 }
 
+.hero__title::selection {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
 .hero__subtitle {
   max-width: 650px;
   margin: 24px 0 0;

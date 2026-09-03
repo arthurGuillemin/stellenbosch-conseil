@@ -48,8 +48,8 @@ a {
 }
 
 ::selection {
-  color: var(--sc-white);
-  background: var(--sc-blue);
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #111;
 }
 
 :focus-visible {
