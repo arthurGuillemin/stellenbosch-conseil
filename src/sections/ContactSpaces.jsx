@@ -86,7 +86,8 @@ export default function ContactSpaces() {
               <textarea
                 className="form-control"
                 name="request"
-                placeholder="Vos besoins"
+                placeholder="Vos besoins *"
+                required = "true"
               />
             </div>
 
@@ -143,6 +144,7 @@ export default function ContactSpaces() {
                 name="firstname"
                 placeholder="Prénom *"
                 autoComplete="given-name"
+                required = "true"
               />
             </div>
 
@@ -153,6 +155,7 @@ export default function ContactSpaces() {
                 name="lastname"
                 placeholder="Nom *"
                 autoComplete="family-name"
+                required = "true"
               />
             </div>
 
@@ -163,6 +166,7 @@ export default function ContactSpaces() {
                 name="email"
                 placeholder="Adresse e-mail *" 
                 autoComplete="email"
+                required = "true"
               />
             </div>
 
@@ -181,7 +185,8 @@ export default function ContactSpaces() {
                 className="form-control"
                 type="text"
                 name="position"
-                placeholder="Poste recherché"
+                placeholder="Poste recherché *"
+                required = "true"
               />
             </div>
 

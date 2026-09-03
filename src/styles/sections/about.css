@@ -158,11 +158,12 @@
   font-size: 0.9rem;
 }
 
-.about__caption span {
+.about__media span {
   display: block;
     text-align: justify;
+    font-style: italic;
 
-  margin-top: 6px;
+  margin-bottom: 25px;
 
   color: var(--sc-grey-600);
 

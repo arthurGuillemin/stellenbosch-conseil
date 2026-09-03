@@ -12,7 +12,7 @@ export default function Quote() {
           s’entourer des meilleurs.
         </blockquote>
                 <div className="quote-mark" aria-hidden="true">
-          “
+  
         </div>
 
         <p className="quote-author">

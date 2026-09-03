@@ -12,17 +12,17 @@ const steps = [
   {
     number: "03",
     title: "Évaluer",
-    text: "Entretiens approfondis et analyse de l’adéquation au poste.",
+    text: "Entretiens approfondis et analyse de l’adéquation des candidats au poste..",
   },
   {
     number: "04",
     title: "Sélectionner",
-    text: "Présentation argumentée des meilleurs profils et de la short-list.",
+    text: "Présentation des meilleurs profils composant la short-list.",
   },
   {
     number: "05",
     title: "Accompagner",
-    text: "Jusqu’à la signature et la prise de poste.",
+    text: "Suivi jusqu’à la signature et la prise de poste.",
   },
 ];
 

@@ -21,7 +21,9 @@ export default function About() {
               <div className="rule" />
             </div>
 
+
             <div className="about__visual">
+              
               <img
                 src="/images/guggenheim.png"
                 alt=""
@@ -44,7 +46,7 @@ export default function About() {
             </p>
 
             <p>
-              Notre méthodologie est basée sur l’approche directe
+              Notre méthodologie est basée sur l’approche directe des candidats.
             </p>
 
             <p>
@@ -61,6 +63,11 @@ export default function About() {
         </div>
 
         <div className="about__media">
+            <span>
+              Après un parcours dans l’industrie automobile et dans la
+              distribution automobile où il a occupé des postes de direction,
+              Emmanuel Porte a fondé le cabinet Stellenbosch Conseil en 2022.
+            </span>
           <img
             src="/images/emPorte.png"
             alt="Emmanuel Porte, fondateur de Stellenbosch Conseil"
@@ -71,11 +78,6 @@ export default function About() {
           <p className="about__caption">
             Emmanuel Porte — Fondateur de Stellenbosch Conseil
 
-            <span>
-              Après un parcours dans l’industrie automobile et dans la
-              distribution automobile où il a occupé des postes de direction,
-              Emmanuel Porte a fondé le cabinet Stellenbosch Conseil en 2022.
-            </span>
           </p>
         </div>
 

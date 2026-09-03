@@ -5,7 +5,7 @@ const references = [
   },
   {
     name: "Groupe Priod",
-    logo: "/images/refs/groupe-priod.png",
+    logo: "/images/refs/groupe-priod.avif",
   },
   {
     name: "BPM Exclusive",

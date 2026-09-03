@@ -27,17 +27,17 @@ export default function LegalPage() {
             <p>
               <strong>Stellenbosch Conseil</strong>
               <br />
-              [FORME JURIDIQUE]
+              SASU
               <br />
-              Capital social : [CAPITAL SOCIAL] €
+              Capital social : 10 000 €
               <br />
               Siège social : 9, rue Vineuse, 75116 Paris, France
               <br />
-              SIREN : [NUMÉRO SIREN]
+              SIREN : 911774685
               <br />
-              RCS : [VILLE ET NUMÉRO RCS]
+              RCS :  911774685RCS Paris
               <br />
-              Numéro de TVA intracommunautaire : [NUMÉRO TVA SI APPLICABLE]
+              Numéro de TVA intracommunautaire : FR18911774685
             </p>
 
             <p>

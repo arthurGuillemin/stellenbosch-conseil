@@ -14,7 +14,7 @@ export default function Footer() {
             />
 
             <p>
-             Cabinet de conseil en recrutement de profils rares , cadres et dirigeants
+             Cabinet de conseil <br />en recrutement de profils rares, cadres et dirigeants
             </p>
           </div>
 
@@ -24,14 +24,16 @@ export default function Footer() {
                  Paris - France
               </span>
 
-              <a href="mailto:eporte@stellenboschconseil.com">
-                eporte@stellenboschconseil.com
-              </a>
 
               <a href="tel:+33630705088">
                 +33 (0)6 30 70 50 88
               </a>
             </div>
+
+              <a href="mailto:eporte@stellenboschconseil.com">
+                eporte@stellenboschconseil.com
+              </a>
+
           </div>
 
           <div>
