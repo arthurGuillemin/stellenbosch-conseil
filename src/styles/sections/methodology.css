@@ -8,6 +8,7 @@
 ========================= */
 
 .methodology__grid {
+  margin-top: 50px;
   display: grid;
 
   grid-template-columns:
