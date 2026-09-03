@@ -133,7 +133,7 @@
 
 .about__media {
   justify-self: end;
-
+  margin-top: 110px;
   width: 100%;
   max-width: 380px;
 }
@@ -141,9 +141,9 @@
 .about__image {
   display: block;
 
-  width: 85%;
-  height: 450px;
-  margin-left: 20px;
+  width: 60%;
+  height: 300px;
+  margin-left: 65px;
 
   object-fit: cover;
   object-position: center top;
@@ -155,7 +155,7 @@
   margin: 16px 10px 0;
   color: var(--sc-black);
 
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .about__media span {

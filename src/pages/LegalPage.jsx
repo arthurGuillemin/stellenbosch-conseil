@@ -88,7 +88,7 @@ export default function LegalPage() {
             </p>
 
             <p>
-              [OPTIONNEL : NOM DU DÉVELOPPEUR / PRESTATAIRE]
+              Arthur Guillemin
             </p>
           </section>
 

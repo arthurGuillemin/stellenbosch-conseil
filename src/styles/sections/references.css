@@ -8,6 +8,11 @@
   background: var(--sc-white);
 }
 
+
+/* =========================
+   TITRE
+========================= */
+
 .references__title {
   margin: 0 0 32px;
 
@@ -21,9 +26,6 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.logo-marquee__item img.logo--stellantis {
-  transform: scale(1.35);
-}
 
 
 /* =========================
@@ -33,11 +35,15 @@
 .logo-marquee {
   position: relative;
 
+  width: 100%;
+
   overflow: hidden;
 }
 
 
-/* Fondu gauche / droite */
+/* =========================
+   FONDU GAUCHE / DROITE
+========================= */
 
 .logo-marquee::before,
 .logo-marquee::after {
@@ -89,9 +95,16 @@
 
   gap: clamp(40px, 5vw, 70px);
 
-  animation: logo-scroll 32s linear infinite;
+  animation:
+    logo-scroll 32s linear infinite;
 
   will-change: transform;
+}
+
+
+/* Pause au survol si tu veux */
+.logo-marquee:hover .logo-marquee__track {
+  animation-play-state: paused;
 }
 
 
@@ -136,13 +149,69 @@
     opacity 0.3s ease;
 }
 
+
+/* =========================
+   CORRECTIONS VISUELLES
+========================= */
+
+/* CAT trop petit dans son fichier */
+.logo-marquee__item img.logo--cat {
+  transform: scale(1.50);
+}
+
+
+/* PRIOD trop petit dans son fichier */
+.logo-marquee__item img.logo--priod {
+  transform: scale(1.42);
+}
+
+
+/* STELLANTIS contient beaucoup d'espace vide */
+.logo-marquee__item img.logo--stellantis {
+  transform: scale(1.35);
+}
+
+.logo-marquee__item img.logo--flex-n-gate {
+  transform: scale(1.35);
+}
+
+.logo-marquee__item img.logo--trujas{
+  transform: scale(1.35);
+}
+
+.logo-marquee__item img.logo--vincent{
+  transform: scale(1.35);
+}
+
+
+
+
+/* =========================
+   HOVER
+========================= */
+
 .logo-marquee__item img:hover {
   transform: scale(1.06);
 }
 
 
+/* conserver le scale spécifique au hover */
+
+.logo-marquee__item img.logo--cat:hover {
+  transform: scale(1.24);
+}
+
+.logo-marquee__item img.logo--priod:hover {
+  transform: scale(1.24);
+}
+
+.logo-marquee__item img.logo--stellantis:hover {
+  transform: scale(1.42);
+}
+
+
 /* =========================
-   ANIMATION
+   ANIMATION INFINIE
 ========================= */
 
 @keyframes logo-scroll {
@@ -185,5 +254,17 @@
   .logo-marquee__item img {
     max-width: 115px;
     max-height: 52px;
+  }
+
+  .logo-marquee__item img.logo--cat {
+    transform: scale(1.18);
+  }
+
+  .logo-marquee__item img.logo--priod {
+    transform: scale(1.18);
+  }
+
+  .logo-marquee__item img.logo--stellantis {
+    transform: scale(1.3);
   }
 }

@@ -56,7 +56,7 @@ export default function About() {
 
             <p className="about__founder">
               Le cabinet est dirigé par son fondateur
-              <strong> Emmanuel Porte.</strong>
+              Emmanuel Porte.
             </p>
           </div>
 

@@ -17,6 +17,7 @@
   gap: clamp(70px, 9vw, 130px);
 
   align-items: start;
+
 }
 
 
@@ -78,23 +79,6 @@
 
   object-fit: cover;
   object-position: center;
-
-}
-
-
-/* Petit détail bleu */
-
-.methodology__visual::after {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-  bottom: 0;
-
-  width: 52px;
-  height: 3px;
-
 }
 
 
@@ -104,13 +88,14 @@
 
 .methodology__copy {
   display: grid;
-    text-align: justify;
 
   gap: 22px;
 
   max-width: 650px;
 
   margin-top: 42px;
+
+  text-align: justify;
 }
 
 .methodology__copy p {
@@ -128,7 +113,14 @@
 ========================= */
 
 .methodology__right {
-  padding-top: 18px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-top: 0;
 }
 
 
@@ -141,12 +133,15 @@
 
   display: grid;
 
+  width: 100%;
+  max-width: 430px;
+  
+
   gap: 0;
 }
 
 .method-step {
   position: relative;
-    text-align: justify;
 
   display: grid;
 
@@ -157,6 +152,8 @@
   column-gap: 24px;
 
   padding-bottom: 38px;
+
+  text-align: justify;
 }
 
 
@@ -177,7 +174,9 @@
 }
 
 
-/* Numéro */
+/* =========================
+   NUMÉRO
+========================= */
 
 .method-step__number {
   position: relative;
@@ -195,7 +194,7 @@
 
   background: var(--sc-white);
 
-  color: var(--sc-black);
+    color: var(--sc-gold);
 
   font-family: var(--font-display);
   font-size: 1.1rem;
@@ -203,7 +202,9 @@
 }
 
 
-/* Contenu étape */
+/* =========================
+   CONTENU ÉTAPE
+========================= */
 
 .method-step__content {
   padding-top: 4px;
@@ -240,6 +241,8 @@
     grid-template-columns: 1fr;
 
     gap: 64px;
+
+    align-items: start;
   }
 
   .methodology__content {
@@ -261,9 +264,11 @@
   }
 
   .methodology__right {
-    max-width: 650px;
+    justify-content: flex-start;
+  }
 
-    padding-top: 0;
+  .methodology__steps {
+    max-width: 650px;
   }
 }
 
