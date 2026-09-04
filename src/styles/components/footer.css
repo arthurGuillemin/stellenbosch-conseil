@@ -42,6 +42,10 @@
   font-size: 0.86rem;
 }
 
+.footer__contact a{
+  margin-bottom: 5px;
+}
+
 .footer__social {
   display: flex;
   gap: 12px;
