@@ -15,6 +15,8 @@
     minmax(300px, 0.9fr);
 
   gap: clamp(60px, 8vw, 120px);
+    margin-top: -17px;
+
 
   align-items: center;
 }
@@ -143,6 +145,7 @@
 
   width: 60%;
   height: 300px;
+
   margin-left: 10px;
 
   object-fit: cover;
@@ -152,10 +155,27 @@
 }
 
 .about__caption {
-  margin: 16px 10px 0;
+  width: 60%;
+  margin: 16px 0 0 10px;
+
   color: var(--sc-black);
 
   font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.about__caption span {
+  display: block;
+
+  margin-top: 15px;
+
+  color: var(--sc-grey-600);
+
+  font-size: 0.78rem;
+  font-style: italic;
+  line-height: 1.55;
+
+  text-align: justify;
 }
 
 .about__media span {
