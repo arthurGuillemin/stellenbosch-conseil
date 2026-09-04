@@ -71,14 +71,21 @@ export default function About() {
             loading="lazy"
           />
 
-          <p className="about__caption">
-            Emmanuel Porte <br /> Fondateur de Stellenbosch Conseil
-                        <span>
-              Après un parcours dans l’industrie automobile et dans la
-              distribution automobile où il a occupé des postes de direction,
-              Emmanuel Porte a fondé le cabinet Stellenbosch Conseil en 2022.
-            </span>
-          </p>
+          <div className="about__caption">
+  <strong>Emmanuel Porte</strong>
+
+  <div className="about__role">
+    <span>Fondateur</span>
+    <span>Stellenbosch</span>
+    <span>Conseil</span>
+  </div>
+
+  <p>
+    Après un parcours dans l’industrie automobile et dans la distribution
+    automobile où il a occupé des postes de direction, Emmanuel Porte a fondé
+    le cabinet Stellenbosch Conseil en 2022.
+  </p>
+</div>
         </div>
 
       </div>

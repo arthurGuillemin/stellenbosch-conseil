@@ -142,6 +142,7 @@
 
   width: 100%;
   max-width: 380px;
+  margin-left: 7rem;
 }
 
 .about__image {
@@ -150,7 +151,7 @@
   width: 60%;
   height: 300px;
 
-  margin: 0 60px;
+  margin: 0;
 
   object-fit: cover;
   object-position: center top;
@@ -161,26 +162,40 @@
 .about__caption {
   width: 70%;
 
-  margin: 16px auto 0;
+  margin-top: 16px;
 
   color: var(--sc-black);
 
   font-size: 0.82rem;
   line-height: 1.45;
-
-  text-align: left;
 }
 
 .about__caption strong {
   display: block;
 
+  margin-bottom: 6px;
+
   font-weight: 500;
 }
 
-.about__caption span {
-  display: block;
+.about__role {
+  display: flex;
 
-  margin-top: 18px;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  margin-bottom: 18px;
+
+  color: var(--sc-black);
+
+  font-size: 0.82rem;
+}
+
+/* Texte descriptif */
+.about__caption p {
+  margin: 0;
 
   color: var(--sc-grey-600);
 
