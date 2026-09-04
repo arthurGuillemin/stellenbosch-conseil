@@ -27,6 +27,7 @@
   gap: clamp(20px, 3vw, 42px);
 
   margin-left: auto;
+  margin-top: -25px;
 }
 
 .site-nav__links a {

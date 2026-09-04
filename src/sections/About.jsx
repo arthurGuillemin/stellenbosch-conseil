@@ -72,7 +72,7 @@ export default function About() {
           />
 
           <p className="about__caption">
-            Emmanuel Porte — Fondateur de Stellenbosch Conseil
+            Emmanuel Porte <br /> Fondateur de Stellenbosch Conseil
                         <span>
               Après un parcours dans l’industrie automobile et dans la
               distribution automobile où il a occupé des postes de direction,
