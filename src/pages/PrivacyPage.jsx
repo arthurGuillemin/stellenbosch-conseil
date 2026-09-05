@@ -107,7 +107,7 @@ export default function PrivacyPage() {
               <li>adresse électronique ;</li>
               <li>numéro de téléphone ;</li>
               <li>poste ou type de poste recherché ;</li>
-              <li>curriculum vitae ;</li>
+              <li>curriculum vitae</li>
               <li>
                 informations relatives à la formation, aux qualifications et
                 à l’expérience professionnelle ;

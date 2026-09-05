@@ -87,7 +87,18 @@
 
   filter: grayscale(100%);
 }
+.file-input__selected {
+  margin: 12px 0 0;
+  padding: 10px 14px;
 
+  border-left: 2px solid var(--sc-gold);
+
+  color: var(--sc-grey-700);
+
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
 .contact-panel__visual::after {
   content: "";
 
