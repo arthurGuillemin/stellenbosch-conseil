@@ -74,9 +74,12 @@ export default function LegalPage() {
             <p>
               <strong>Netlify, Inc.</strong>
               <br />
-              [ADRESSE LÉGALE NETLIFY À VÉRIFIER AU MOMENT DE LA MISE EN LIGNE]
+              Netlify, Inc.
+101 2nd Street
+San Francisco, CA 94105
+États-Unis
               <br />
-              [TÉLÉPHONE OU COORDONNÉES OFFICIELLES DE L’HÉBERGEUR]
+              E-mail : support@netlify.com
             </p>
           </section>
 
