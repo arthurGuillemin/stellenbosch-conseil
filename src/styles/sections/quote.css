@@ -61,5 +61,42 @@ background:
 }
 
 @media (max-width: 680px) {
-  .quote-text { font-size: clamp(2rem, 9vw, 3rem); }
+
+  .quote-section {
+    position: relative;
+
+    padding:
+      70px
+      22px;
+  }
+
+  .quote-text {
+    position: relative;
+    z-index: 2;
+
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .quote-author {
+    position: relative;
+    z-index: 2;
+  }
+
+  .quote-mark {
+    display: none;
+  }
+
+  .quote-section::after {
+    right: -10px;
+    top: 50%;
+    bottom: auto;
+
+    transform: translateY(-40%);
+
+    font-size: 18rem;
+
+    color: rgba(184, 154, 91, 0.12);
+
+    z-index: 1;
+  }
 }

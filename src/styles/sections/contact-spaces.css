@@ -243,10 +243,6 @@ textarea.form-control {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 680px) {
 
   .contact-panel {
@@ -263,13 +259,16 @@ textarea.form-control {
     margin-bottom: 38px;
   }
 
+  .contact-panel__heading {
+    text-align: center;
+  }
+
   .contact-panel__heading h3 {
     font-size: clamp(2.3rem, 11vw, 3.4rem);
   }
 
   .contact-panel__visual {
-    justify-self: start;
-
+    justify-self: center;
     max-width: 210px;
   }
 

@@ -274,21 +274,36 @@
       22px;
   }
 
-  .about__heading-grid {
-    grid-template-columns: 1fr;
 
-    gap: 30px;
+  /* TITRE + PETITE IMAGE CÔTE À CÔTE */
+
+  .about__heading-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(110px, 150px);
+
+    gap: 20px;
+
+    align-items: center;
   }
 
   .about__visual {
-    justify-self: start;
+    width: 100%;
+    max-width: 150px;
 
-    max-width: 210px;
+    justify-self: end;
   }
 
   .about__visual img {
-    height: 250px;
+    width: 80%;
+    height: 190px;
+    margin-left: 2rem;
+
+    object-fit: cover;
   }
+
+
+  /* TEXTE */
 
   .about__copy {
     gap: 18px;
@@ -301,20 +316,57 @@
     line-height: 1.7;
   }
 
+
+  /* =========================
+     PARTIE FONDATEUR CENTRÉE
+  ========================= */
+
   .about__media {
-    max-width: 100%;
+    width: 100%;
+    max-width: 360px;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    justify-self: center;
+
+    text-align: center;
   }
 
   .about__image {
-    width: 100%;
+    width: 80%;
     height: 420px;
 
-    margin: 0;
+    margin: 0 auto;
+
+    object-fit: cover;
+    object-position: center top;
   }
 
   .about__caption {
+    width: 80%;
+
+    margin:
+      16px
+      auto
+      0;
+
+    text-align: left;
+  }
+
+  .about__caption strong {
+    text-align: center;
+  }
+
+  .about__role {
     width: 100%;
 
-    margin-left: 0;
+    justify-content: space-between;
+
+    text-align: center;
+  }
+
+  .about__caption p {
+    text-align: justify;
   }
 }
