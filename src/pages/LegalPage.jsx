@@ -84,12 +84,9 @@ export default function LegalPage() {
             <h2>4. Conception et réalisation</h2>
 
             <p>
-              Le site a été conçu et développé pour Stellenbosch Conseil.
+              Le site a été conçu et développé pour Stellenbosch Conseil par Arthur Guillemin <a href="https://github.com/arthurGuillemin"> Github</a>
             </p>
 
-            <p>
-              Arthur Guillemin
-            </p>
           </section>
 
           <section className="legal-section">
